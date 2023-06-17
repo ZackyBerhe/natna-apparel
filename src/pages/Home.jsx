@@ -1,6 +1,7 @@
 import React from "react";
 import Body from "../components/layout/Body";
 import HeroImage from "../assets/Hero-Image.png";
+import HeroProductCard from "../components/HeroProductCard";
 
 const Home = () => {
   return (
@@ -20,6 +21,12 @@ const Home = () => {
             </div>
 
             <img src={HeroImage} alt="" className="md:w-1/2" />
+          </div>
+
+          {/* Trending Products Section */}
+          <div className="flex flex-col gap-20 w-full items-center my-10">
+            <p className="text-4xl font-primary">Trending Products</p>
+            <HeroProductCard />
           </div>
         </div>
       </Body>
