@@ -5,13 +5,13 @@ import Button from "./utilities/Button";
 const HeroProductCard = () => {
   return (
     <>
-      <div className="p-6 flex gap-4 w-3/5 items-center bg-white/40">
-        <img src={ProductImage} alt="" className="w-2/5" />
+      <div className="p-6 flex flex-col md:flex-row gap-4 md:w-4/5 lg:w-3/5 items-center bg-white/40">
+        <img src={ProductImage} alt="" className="md:w-2/5" />
         <div className="h-full p-6 flex flex-col gap-6">
-          <p className="text-3xl font-medium">
+          <p className="text-2xl md:text-3xl font-medium">
             Vibrant African Pattern T-Shirt
           </p>
-          <p className="text-lg font-extralight">
+          <p className="md:text-lg font-extralight">
             Celebrate African culture with our Vibrant African Pattern T-Shirt.
             Bold, colorful, and eye-catching.
           </p>
