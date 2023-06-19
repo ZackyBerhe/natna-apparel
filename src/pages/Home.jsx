@@ -2,6 +2,8 @@ import React from "react";
 import Body from "../components/layout/Body";
 import HeroImage from "../assets/Hero-Image.png";
 import HeroProductCard from "../components/HeroProductCard";
+import ProductCard from "../components/ProductCard";
+import Button from "../components/utilities/Button";
 
 const Home = () => {
   return (
@@ -26,7 +28,29 @@ const Home = () => {
           {/* Trending Products Section */}
           <div className="flex flex-col gap-20 w-full items-center my-10">
             <p className="text-4xl font-primary">Trending Products</p>
+
             <HeroProductCard />
+          </div>
+
+          {/* Top Sellers Products Section */}
+          <div className="flex flex-col gap-20 w-full items-center md:items-start my-10">
+            <p className="text-4xl font-primary">Top Sellers Products</p>
+            <div className="md:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <div className="w-44">
+                <Button>Shop Now</Button>
+              </div>
+            </div>
           </div>
         </div>
       </Body>
