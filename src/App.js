@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Auth from "./pages/Auth";
 import Home from "./pages/Home";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </>
   );
 }

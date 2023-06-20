@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Body>
-        <div className="w-full flex flex-col gap-6">
+        <div className="w-full flex flex-col gap-20">
           {/* hero Section  */}
           <div className="w-full flex flex-col gap-10 lg:gap-32 mt-14 items-center">
             <div className="flex flex-col gap-2 md:gap-8 w-full items-center justify-center">
