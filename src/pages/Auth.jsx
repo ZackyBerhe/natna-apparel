@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import NavBar from "../components/layout/NavBar";
+// import NavBar from "../components/layout/NavBar";
 import Body from "../components/layout/Body";
 import AuthImage from "../assets/auth-imagepng.png";
 import Input from "../components/utilities/Input";

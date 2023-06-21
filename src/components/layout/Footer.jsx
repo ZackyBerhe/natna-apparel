@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-white/40 w-full px-3 md:px-7 lg:px-32 flex flex-col items-center justify-center mt-16">
-        <div className="w-full border-b border-neutral-400 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 py-10">
+        <div className="w-full border-b border-neutral-400 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 py-10">
           <img
             src={FooterLogo}
             alt="Footer Logo"
@@ -57,7 +57,7 @@ const Footer = () => {
             <Input type={"text"} placeholder={"Email Address"} />
             <div className="flex justify-end items-end py-1 w-full">
               <div className="flex flex-col gap-1 group cursor-pointer py-1 text-primary w-max transition-all ease-in-out duration-200">
-                <p>Shop Now</p>
+                <p>Subscribe</p>
                 <div className="h-0.5 w-1/4 bg-primary group-hover:w-full transition-all ease-in-out duration-200"></div>
               </div>
             </div>
