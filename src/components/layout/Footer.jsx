@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FooterLogo from "../../assets/logo.svg";
+import { useNavigate, useLocation } from "react-router-dom";
 import Input from "../utilities/Input";
 import {
   FaInstagram,
@@ -11,9 +12,23 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const [footer, setFooter] = useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname.includes("/auth")) {
+      setFooter(false);
+    } else {
+      setFooter(true);
+    }
+  }, [location.pathname]);
   return (
     <>
-      <div className="bg-white/40 w-full px-3 md:px-7 lg:px-32 flex flex-col items-center justify-center mt-16">
+      <div
+        className={` ${
+          footer ? "flex" : "hidden"
+        } bg-white/40 w-full px-3 md:px-7 lg:px-32 flex flex-col items-center justify-center mt-16`}
+      >
         <div className="w-full border-b border-neutral-400 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 py-10">
           <img
             src={FooterLogo}

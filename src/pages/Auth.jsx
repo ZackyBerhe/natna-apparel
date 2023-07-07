@@ -1,13 +1,16 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 // import NavBar from "../components/layout/NavBar";
 import Body from "../components/layout/Body";
 import AuthImage from "../assets/auth-imagepng.png";
+import WomenAuthImage from "../assets/WomenAuthImage.jpg";
 import Input from "../components/utilities/Input";
 import Button from "../components/utilities/Button";
 
 const Auth = () => {
   const signIn = useRef();
   const signUp = useRef();
+  const signInImage = useRef();
+  const signUpImage = useRef();
 
   const scrollUp = () => {
     signIn?.current?.scrollIntoView({ behavior: "smooth" });
@@ -20,7 +23,7 @@ const Auth = () => {
       <Body>
         <div className="w-full px-4 flex flex-col lg:flex-row gap-10 justify-center mt-6 h-[80vh]">
           {/* sign in and sign up form container */}
-          <div className="w-4/5 lg:w-[40%] bg-white/30 overflow-auto noscrollBar">
+          <div className="w-4/5 lg:w-[40%] bg-white/30 overflow-hidden noscrollBar">
             {/* Sign in Component  */}
             <div
               ref={signIn}
@@ -43,7 +46,7 @@ const Auth = () => {
                       onClick={scrollDown}
                       className="font-medium text-sky-500 cursor-pointer"
                     >
-                      {" "}
+                      
                       Sign up
                     </span>
                   </p>
@@ -82,8 +85,15 @@ const Auth = () => {
           </div>
 
           {/* Image for Auth */}
-          <div className="w-4/5 lg:w-[40%]">
+          <div className="w-4/5 lg:w-[40%] bg-white/30 overflow-auto noscrollBar">
+            {/* <img
+              ref={signInImage}
+              src={WomenAuthImage}
+              alt="Auth Placeholder"
+              className="h-[80vh] object-cover w-full"
+            /> */}
             <img
+              ref={signUpImage}
               src={AuthImage}
               alt="Auth Placeholder"
               className="h-[80vh] object-cover w-full"

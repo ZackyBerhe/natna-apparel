@@ -14,15 +14,19 @@ import Auth from "./pages/Auth";
 import Home from "./pages/Home";
 import Footer from "./components/layout/Footer";
 import Category from "./pages/Category";
+import Product from "./pages/Product";
+import Cart from "./components/layout/Cart";
 
 function App() {
   return (
     <>
       <NavBar />
+      {/* <Cart /> */}
       <Routes>
         <Route path="/auth" element={<Auth />} />
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
       <Footer />
     </>
