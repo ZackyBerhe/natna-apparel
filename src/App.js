@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Cart /> */}
+      <Cart />
       <Routes>
         <Route path="/auth" element={<Auth />} />
         <Route path="/" element={<Home />} />

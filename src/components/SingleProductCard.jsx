@@ -13,11 +13,13 @@ const SingleProductCard = () => {
 
   const handleAdd = () => {
     setItemQuantity(itemQuantity + 1);
+    setPrice(singlePrice + price);
   };
 
   const handleSubtract = () => {
     if (itemQuantity > 1) {
       setItemQuantity(itemQuantity - 1);
+      setPrice(singlePrice - price);
     }
   };
 
